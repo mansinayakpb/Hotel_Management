@@ -1,0 +1,49 @@
+{% load static %}
+<header class="site-header js-site-header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-6 col-lg-4 site-logo" data-aos="fade">
+                <a href="index.html">Starlit Retreat</a>
+            </div>
+            <div class="col-6 col-lg-8 d-flex justify-content-end align-items-center">
+
+                <!-- Register Button -->
+                
+                <!-- Three-line Toggle -->
+                <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                </div>
+              
+                <!-- END menu-toggle -->
+                {% comment %} <a href="{% url 'signup' %}" class="btn btn-primary register-btn" style="margin-right: 15px; align-items: right;">Register</a> {% endcomment %}
+                <a href="{% url 'signup' %}" class="btn btn-primary register-btn" style="margin-right: 15px;">Register</a>
+                <a href="{% url 'login' %}" class="btn btn-primary login-btn" style="margin-right: 15px;">Login</a>
+              
+                <div class="site-navbar js-site-navbar">
+                    <nav role="navigation">
+                        <div class="container">
+                            <div class="row full-height align-items-center">
+                                <div class="col-md-6 mx-auto">
+                                    <ul class="list-unstyled menu">
+                                        <li class="active"><a href="index.html">Home</a></li>
+                                        <li><a href="rooms.html">Rooms</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        {% comment %} <li><a href="events.html">Events</a></li> {% endcomment %}
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="reservation.html">Reservation</a></li>
+                                        <li><a href="{% url 'signup' %}">Signup</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
